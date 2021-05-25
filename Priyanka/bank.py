@@ -1,4 +1,7 @@
-class Bank:
+
+
+
+class bank:
 
     def __init__(self):
         self.name = " "
@@ -8,7 +11,7 @@ class Bank:
         self.branch = " "
 
         self.result = 0
-        self.balance = 0
+        self.balance = 20000
 
     def details(self):
 
@@ -35,4 +38,33 @@ class Bank:
     def display(self):
 
         print(" \n Net Available Balance=", self.balance)
+
+
+    # inherited the bank class
+
+class Account(bank):
+    def __init__(self):
+            super().__init__()
+            self.username = " "
+            self.password = " "
+            self.login_username = " "
+            self.login_password = " "
+
+    def registration(self):
+        super().details()
+        self.username = input("Enter username\n")
+        self.password = int(input("Enter password\n"))
+
+    def login(self):
+            print(" login username:")
+            self.login_username = (input())
+
+            print("login password:")
+            self.login_password= int(input())
+
+            if (self.login_username == self.username) and (self.password == self.login_password):
+
+                print("Net Available Balance=", self.balance)
+            else:
+                print("can't login to account")
 

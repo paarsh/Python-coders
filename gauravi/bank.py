@@ -33,7 +33,6 @@ class Bank:
             print(" \n Insufficient balance")
 
     def display(self):
-
         print(" \n Net Available Balance=", self.balance)
 
 
@@ -66,3 +65,4 @@ class Account(Bank):
                 print("Net Available Balance=", self.balance)
             else:
                 print("Login Failed!!")
+
