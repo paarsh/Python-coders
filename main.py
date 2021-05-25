@@ -12,10 +12,16 @@
 #obj.start()
 #obj.out()
 
-from priya import rectangle
+#from priya import rectangle
 
-R1 = rectangle.rect(4,5)
-R1.display()
-V1 = rectangle.volume(3,2,1)
-V1.dis()
+#R1 = rectangle.rect(4,5)
+#R1.display()
+#V1 = rectangle.volume(3,2,1)
+#V1.dis()
 
+from priya import Login
+
+b = Login.bank()
+b.get()
+b.deposit()
+b.withdraw()
