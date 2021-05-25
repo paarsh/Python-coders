@@ -19,9 +19,15 @@
 #V1 = rectangle.volume(3,2,1)
 #V1.dis()
 
+#from priya import Login
+
+#b = Login.bank()
+#b.get()
+#b.deposit()
+#b.withdraw()
+
 from priya import Login
 
-b = Login.bank()
-b.get()
-b.deposit()
-b.withdraw()
+l = Login.login1()
+l.reg()
+l.login()
