@@ -1,7 +1,4 @@
-
-
-
-class bank:
+class Bank:
 
     def __init__(self):
         self.name = " "
@@ -11,7 +8,7 @@ class bank:
         self.branch = " "
 
         self.result = 0
-        self.balance = 20000
+        self.balance = 0
 
     def details(self):
 
@@ -36,13 +33,14 @@ class bank:
             print(" \n Insufficient balance")
 
     def display(self):
-
         print(" \n Net Available Balance=", self.balance)
 
 
-    # inherited the bank class
 
-class Account(bank):
+
+   # inherited the bank class
+
+class Account(Bank):
     def __init__(self):
             super().__init__()
             self.username = " "
@@ -66,5 +64,5 @@ class Account(bank):
 
                 print("Net Available Balance=", self.balance)
             else:
-                print("can't login to account")
+                print("Login Failed!!")
 
